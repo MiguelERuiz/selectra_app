@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   resources :providers do
-    resources :pixels, except: [:create]
+    resources :pixels, except: [:create] do
+      patch :convert_pixel
+    end
     collection do
       post :create_pixel, controller: :providers
     end

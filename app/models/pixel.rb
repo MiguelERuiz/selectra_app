@@ -1,8 +1,6 @@
 class Pixel < ApplicationRecord
   # VALIDATORS
-  # validates
+  validates :url, length: { maximum: 2000 }
   # RELATIONS
   belongs_to :provider
-  # SCOPES
-  scope :with_provider, -> (provider){ where(provider: provider)}
 end

@@ -14,6 +14,6 @@ class PixelsController < ApplicationController
   private
   # Use callbacks to share common setup or constraints between actions.
   def set_pixel
-    @pixel = Pixel.find(params[:id])
+    @pixel = Pixel.find(params[:pixel_id])
   end
 end

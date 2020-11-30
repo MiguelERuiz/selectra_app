@@ -7,5 +7,4 @@ class Provider < ApplicationRecord
 
   # RELATIONS
   has_many :pixels
-
 end
